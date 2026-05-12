@@ -18,7 +18,7 @@ train_datagen = ImageDataGenerator(
 
 # Training Data
 train_data = train_datagen.flow_from_directory(
-    "dataset",
+    "cervical fracture/train",
     target_size=(224, 224),
     batch_size=32,
     class_mode='binary',
@@ -27,7 +27,7 @@ train_data = train_datagen.flow_from_directory(
 
 # Validation Data
 val_data = train_datagen.flow_from_directory(
-    "dataset",
+    "cervical fracture/val",
     target_size=(224, 224),
     batch_size=32,
     class_mode='binary',
